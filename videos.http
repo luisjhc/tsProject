@@ -1,0 +1,28 @@
+@url = http://localhost:5000
+
+### Get all videos
+GET {{url}}/videos
+
+### Get 1 video
+GET {{url}}/videos/620255a61e0eb439a05d9730
+
+### Create a video
+POST {{url}}/videos
+Content-Type: application/json
+
+{
+    "url": "https://www.youtube.com/watch?v=aMK0SvGiHjw",
+    "title": "A ciegas",
+    "description": "Boulder 'A ciegas' in Albarracin"
+}
+
+### Delete a video
+DELETE {{url}}/videos/620257aea72e10ba1a2fde0a
+
+### Update a video
+PUT {{url}}/videos/620255a61e0eb439a05d9730
+Content-Type: application/json
+
+{
+    "title": "Boulder 'A ciegas' in Albarracin"
+}
