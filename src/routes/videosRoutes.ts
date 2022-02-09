@@ -1,16 +1,22 @@
-import {Router} from 'express';
+import { Router } from "express";
 const router = Router();
 
-import * as videoCtrl from './videosController';
+import * as videoCtrl from "./videosController";
 
-router.get('/videos', videoCtrl.getVideos);
+// routes
+// getting all videos
+router.get("/videos", videoCtrl.getVideos);
 
-router.get('/videos/:id', videoCtrl.getVideo);
+// getting 1 video
+router.get("/videos/:id", videoCtrl.getVideo);
 
-router.post('/videos', videoCtrl.createVideo);
+// creating a video
+router.post("/videos", videoCtrl.createVideo);
 
-router.delete('/videos/:id', videoCtrl.deleteVideo);
+// deleting a video
+router.delete("/videos/:id", videoCtrl.deleteVideo);
 
-router.put('/videos/:id', videoCtrl.updateVideo);
+// updating a video
+router.put("/videos/:id", videoCtrl.updateVideo);
 
 export default router;

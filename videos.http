@@ -1,3 +1,5 @@
+### Testing routes with rest client extension
+
 @url = http://localhost:5000
 
 ### Get all videos
