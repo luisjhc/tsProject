@@ -49,5 +49,5 @@ export const updateVideo: RequestHandler = async (req, res) => {
   if (!videoUpdated) {
     return res.status(204).json();
   }
-  res.json(videoUpdated);
+  return res.json(videoUpdated);
 };
