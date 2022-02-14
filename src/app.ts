@@ -8,7 +8,7 @@ import videoRoutes from "./routes/videosRoutes";
 const app = express();
 
 app.set("port", config.PORT);
-app.set("trust proxy", 1);
+
 app.use(morgan("dev"));
 app.use(cors());
 app.use(express.json());
